@@ -8,5 +8,7 @@ loader = DoclingLoader(file_path=FILE_PATH)
 documents = loader.load()
 
 # For large datasets, lazily load documents
-for document in loader.lazy_load():
-    print(document)
+# for document in loader.lazy_load():
+print("====================================")
+print(documents[0].page_content)
+print(len(documents))
